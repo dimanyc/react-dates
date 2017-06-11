@@ -367,8 +367,6 @@ export default class DayPickerRangeController extends React.Component {
       fakeFocusedInputStartDate = true;
     }
 
-    const { focusedInput, onFocusChange, onClose } = this.props;
-
     if (focusedInput === START_DATE || fakeFocusedInputStartDate) {
       onFocusChange(END_DATE);
 
